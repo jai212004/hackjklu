@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Transparent Form with Video Background</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<img src="/fin.png" >
+<div class="navbar">
+    <a href="uploadresume.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="testimonials.html">Testimonials</a>
+
+</div>
+
+<!-- Background Video -->
+<!-- <video class="video-bg" autoplay muted loop>
+    <source src="sample9.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
+
+<!-- Transparent Neon Form -->
+
+<div class="form-container">
+    <h2>Verify Otp</h2>
+    <form id="signupForm" action="http://localhost:8080/user/checkOtp" method="post">
+        <input type="email" id="username" name="email" placeholder="email" required>
+        <input type="text" id="email" name="otp" placeholder="otp" required>
+        <p class="error-message" id="errorMessage">Invalid details</p>
+        <button type="submit">verify</button>
+    </form>
+</div>
+<div class="container">
+    <div class="wrapper">
+        We help you find <span class="rotating-words">
+                <span>Jobs</span>
+        <span>Careers</span>
+        <span>Opportunities</span>
+            </span>
+    </div>
+
+</div>
+</body>
+</html>

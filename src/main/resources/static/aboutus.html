@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Basic resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .navbar {
+            background-color: #231834;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #FF6600;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007BFF;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="uploadresume.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="login.html">Logout</a>
+</div>
+<!-- Header Section -->
+<header>
+    <h1>Welcome to Our Company</h1>
+    <p>Discover more about who we are and what we stand for</p>
+</header>
+
+<!-- About Us Section -->
+<div class="about-section">
+    <h2>About Us</h2>
+    <p>We are a passionate team of professionals dedicated to delivering the best service and products. Our mission is to provide innovative solutions that make a difference for our customers and clients.</p>
+    <p>Our team works relentlessly to bring top-tier results, and we take pride in our work. We believe in constant growth, collaboration, and creating a positive impact on the world around us.</p>
+</div>
+
+<!-- Meet the Team Section -->
+<div class="about-section team">
+    <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="John Doe">
+        <h3>John Doe</h3>
+        <p>Founder & CEO</p>
+    </div>
+    <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Jane Smith">
+        <h3>Jane Smith</h3>
+        <p>Chief Operating Officer</p>
+    </div>
+    <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Jack Brown">
+        <h3>Jack Brown</h3>
+        <p>Head of Development</p>
+    </div>
+    <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Emily White">
+        <h3>Emily White</h3>
+        <p>Marketing Director</p>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 Our Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

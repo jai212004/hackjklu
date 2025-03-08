@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #231834;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #FF6600;
+        }
+
+        .home-testimonial {
+            background-color: #231834;
+            height: 380px;
+            padding-top: 20px;
+        }
+
+        .home-testimonial h3 {
+            color: var(--orange);
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .home-testimonial h2 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .home-testimonial-bottom {
+            background-color: #f8f8f8;
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            position: relative;
+            height: 300px; /* Increased height for better alignment */
+            top: 150px; /* Adjusted the position */
+        }
+
+        .testimonial-inner {
+            position: relative;
+            top: -174px;
+        }
+
+        .testimonial-pos {
+            position: relative;
+            top: 24px;
+        }
+
+        .testimonial-inner .tour-desc {
+            border-radius: 5px;
+            padding: 40px;
+        }
+
+        .color-grey-3 {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 14px;
+            color: #6c83a2;
+        }
+
+        .testimonial-inner img.tm-people {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            max-width: none;
+        }
+
+        .link-name {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 14px;
+            color: #6c83a2;
+            text-align: center;
+        }
+
+        .link-position {
+            font-family: "Montserrat", Sans-serif;
+            font-size: 12px;
+            color: #6c83a2;
+            text-align: center;
+        }
+
+        /* Container and Row for positioning */
+        .container-fluid {
+            padding: 0;
+        }
+
+        .container {
+            padding: 0 15px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col-md-4 {
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .style-3 {
+            margin: 0 auto;
+        }
+
+        .tour-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .col-md-4 {
+                width: 100%;
+            }
+
+            .home-testimonial {
+                height: auto; /* Adjust height for mobile */
+            }
+
+            .home-testimonial-bottom {
+                height: auto; /* Adjust bottom section height for mobile */
+                top: 0;
+            }
+
+            .testimonial-inner .tour-desc {
+                padding: 20px; /* Reduced padding for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <a href="uploadresume.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="login.html">Logout</a>
+</div>
+
+<!-- Testimonials Section -->
+<section class="home-testimonial">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center testimonial-pos">
+            <div class="col-md-12 pt-4 d-flex justify-content-center">
+            </div>
+            <div class="col-md-15 d-flex justify-content-center">
+                <h2>Explore the students experience</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom Testimonials Section -->
+<section class="home-testimonial-bottom">
+    <div class="container testimonial-inner">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 style-3">
+                <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                        <div class="tour-text color-grey-3 text-center">
+                            &ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;
+                        </div>
+                        <div class="d-flex justify-content-center pt-2 pb-2">
+                            <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt="">
+                        </div>
+                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                        <div class="link-position d-flex justify-content-center">Student</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 style-3">
+                <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                        <div class="tour-text color-grey-3 text-center">
+                            &ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;
+                        </div>
+                        <div class="d-flex justify-content-center pt-2 pb-2">
+                            <img class="tm-people" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        </div>
+                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                        <div class="link-position d-flex justify-content-center">Student</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 style-3">
+                <div class="tour-item">
+                    <div class="tour-desc bg-white">
+                        <div class="tour-text color-grey-3 text-center">
+                            &ldquo;At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.&rdquo;
+                        </div>
+                        <div class="d-flex justify-content-center pt-2 pb-2">
+                            <img class="tm-people" src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                        </div>
+                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                        <div class="link-position d-flex justify-content-center">Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
