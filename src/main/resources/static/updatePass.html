@@ -8,19 +8,24 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-<img src="/fin.png" >
-<div class="navbar">
-    <a href="uploadresume.html">Home</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="login.html">logout</a>
-</div>
-</h2>
-    <form id="signupForm" action="http://localhost:8080/user/updatePass" method="post">
-        <input type="email" id="username" name="email" placeholder="email" required>
-        <input type="password" id="email" name="newpass" placeholder="password" required>
-        <p class="error-message" id="errorMessage">Invalid details</p>
-        <button type="submit">update</button>
+<img src="/fin.png">
+
+
+<!-- Background Video -->
+<!-- <video class="video-bg" autoplay muted loop>
+    <source src="sample9.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
+
+<!-- Transparent Neon Form -->
+
+<div class="form-container">
+    <h2>UpdatePass</h2>
+    <form id="loginForm" action="http://localhost:8080/user/updatePass" method="post">
+        <input type="text" name="email" id="username" name="email" placeholder="email" required>
+        <input type="text" id="password" placeholder="newpass" name = "newpass" required>
+        <p class="error-message" id="errorMessage">Invalid username or password</p>
+        <button type="submit">Update</button>
     </form>
 </div>
 <div class="container">
@@ -33,5 +38,56 @@
     </div>
 
 </div>
+<script>
+    // Jumbotron
+    jQuery(document).ready(function($) {
+
+// Navbar animation
+        /*
+        $(".navbar").mouseover(function () {
+            $(".navbar").children().css("color", "lightgrey");
+        });
+        */
+
+        $(".navbar").mouseout(function () {
+            $(".navbar").children().css("color", "#31b0d5");
+        });
+
+        $(".navbar").children().css("color", "#31b0d5");
+        $(".social").children().css("color", "#31b0d5");
+        /* $(".jumbotron-text").children().css("color", "lightgrey");  */
+
+        /* Jumbotron Effects
+        $(".jumbotron-text").mouseover(function() {
+            $(".jumbotron-text").children().css("color", "#31b0d5");
+        });
+
+        $(".jumbotron-text").mouseout(function() {
+            $(".jumbotron-text").children().css("color", "lightgrey");
+        });
+
+        */
+
+
+        /* Social Media Effects
+
+        $(".social").mouseover(function () {
+            $(".social").children().css("color", "lightgrey");
+        });
+
+        $(".social").mouseout(function () {
+            $(".social").children().css("color", "#31b0d5");
+        });
+
+        */
+
+    });
+
+
+
+
+
+</script>
+
 </body>
 </html>
